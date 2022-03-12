@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.ilham{
+    width: 100%;
+}
+.faldo{
+    width: 71.5%;
+}
+
+.dean{
+    width: 89%;
+}
+
+.team {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 30px 100px;
+    margin: 0 auto;
+}
+
+.team_judul {
+    text-align: center;
+    font-family: 'lora', serif;
+}
+
+.team_judul h1{
+    color: #60EFFF;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+}
+
+.team_judul h1 span{
+    color: #00C6CF;
+}
+
+.team_judul p{
+    color: #94B0B2;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.team_content {
+
+}
+
+.team_list {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    height: 400px;
+    background-image: url(../image/backgriund.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    margin: 120px 0 0;
+    padding: 0 40px;
+}
+.team_image {
+    position: relative;
+    margin-top: -110px;
+    margin-bottom: -4px;
+    bottom: 0;
+    width: 37%;
+}
+.team_text {
+    width: 63%;
+    font-family: 'Lora', serif;
+    margin-top: 6%;
+    padding-right: 10%;
+}
+
+.team_text h1{
+    color: #E6F4F1;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.team_text p{
+    color: #E4FEFF;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.team_text h3{
+    color: #E6F4F1;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.team_icon {
+    display: flex;
+    align-items: center;
+}
+.team_icon a{
+    transition: .5s all;
+}
+.team_icon a i{
+    background: #E4FEFF;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 10px;
+    color: #00C6CF;
+    box-shadow: -3px -3px 7px rgba(255, 255, 255, 0.2), 3px 3px 5px rgba(50, 75, 77, 0.24);
+}
+
+.team_icon a:hover{
+    transform: scale(1.1);
+}
+
+.splide{
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.splide__arrows{
+    display: flex;
+    align-items: center;
+}
+
+.splide__arrow{
+    border: none;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #E4FEFF;
+    color: #00C6CF;
+    cursor: pointer;
+}
+
+.splide__arrow i{
+    font-size: 18px;
+}
+
+.swiper-button-next{
+    width: calc(var(--swiper-navigation-size)/ 20 * 15);
+    height: var(--swiper-navigation-size);
+}
+
+.team_footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #94B0B2;
+    font-family: 'Lora', serif;
+    padding: 40px 0 0;
+}
+
+.team_footer p{
+    font-size: 16px;
+}
+.back{
+    display: flex;
+    align-items: center;
+}
+
+.back a{
+    color: #60EFFF;
+    margin-right: 5px;
+}
+@media (max-width:1050px) {
+
+    .team_list{
+        margin: 40px 0 0;
+    }
+    .team_image{
+        margin-top: 0;
+    }
+}
+
+@media (max-width:980px) {
+    .container{
+        padding: 30px 80px;
+    }
+
+    .team_judul p{
+        padding: 0 80px;
+    }
+
+
+    .team_text p{
+        padding-right: 0;
+    }
+
+
+}
+
+@media (max-width:880px) {
+    .container{
+        padding: 30px 50px;
+    }
+
+    .team_text {
+        margin-top: 4%;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .team_judul p{
+        padding: 0;
+    }
+    .team_list{
+        margin-bottom: 120px;
+    }
+
+    .team_image{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -5px;
+    }
+
+    .team_text{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.9);
+        bottom: -130px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 15px;
+        justify-content: center;
+        padding: 30px 40px;
+        box-shadow: 0px 10px 30px rgba(96, 239, 255, 0.233);
+    }
+
+    .team_text h1{
+        font-size: 3.5vw;
+        color: #324B4D;
+    }
+
+    .team_text p{
+        color: #94B0B2;
+        font-size: 2vw;
+        padding: 0;
+        text-align: center;
+    }
+
+    .team_text h3{
+        color: #94B0B2;
+        font-size: 2.5vw;
+    }
+
+    .ilham{
+        width: 55%;
+    }
+
+    .faldo{
+        width: 39.5%;
+    }
+
+    .dean{
+        width: 50%;
+    }
+    .splide{
+        top: 10%;
+        right: 5%;
+    }
+
+
+
+}
+
+@media (max-width:580px) {
+    .container{
+        padding: 30px 35px;
+    }
+    .team_text {
+        padding: 20px;
+    }
+
+    .team_judul h1{
+        font-size: 24px;
+    }
+    .team_judul p{
+        font-size: 14px;
+    }
+    .team_text p{
+        font-size: 2.5vw;
+    }
+
+    .team_icon a i{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+    }
+
+    .team_footer{
+        flex-direction: column;
+        line-height: 30px;
+    }
+    
+}
+
+@media (max-width:430px) {
+    .container{
+        padding: 30px 20px;
+    }
+    .ilham{
+        width: 62%;
+    }
+
+    .faldo{
+        width: 46.5%;
+    }
+
+    .dean{
+        width: 57%;
+    }
+
+    .team_text h1{
+        font-size: 4.5vw;
+    }
+
+    .team_text p{
+        font-size: 3vw;
+    }
+
+    .team_text h3{
+        font-size: 3.2vw;
+    }
+
+}
+
+@media (max-width:380px) {
+    .team_text p{
+        display: none;
+    }
+    .team_text{
+        width: 100%;
+        border-radius: 0px 0px 15px 15px;
+    }
+}
+
+@media (max-width:325px) {
+    .team_judul h1{
+        font-size: 20px;
+    }
+
+    .team_judul p{
+        font-size: 12px;
+    }
+
+    .ilham{
+        width: 100%;
+    }
+
+    .faldo{
+        width: 71.5%;
+    }
+
+    .dean{
+        width: 89%;
+    }
+
+    .team_text{}
+
+    
+}
